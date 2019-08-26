@@ -38,7 +38,7 @@ namespace SalesWebMvc
 
             services.AddDbContext<SalesWebMvcContext>(options =>
                     options.UseMySql(Configuration.GetConnectionString("SalesWebMvcContext"), builder =>
-builder.MigrationsAssembly("SalesWebMvc")));
+                    builder.MigrationsAssembly("SalesWebMvc")));
 
         }
 
